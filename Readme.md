@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Taras Nemov](https://up.htmlacademy.ru/htmlcss/18/user/467023).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Прокопеня](https://htmlacademy.ru/profile/sera_prokop).
 
 ---
 
