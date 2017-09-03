@@ -52,6 +52,11 @@ a {
 	list-style: none; 
 } 
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 .main-nav a { 
 	color: #000000; 
 	font-weight: bold; 
@@ -62,7 +67,6 @@ a {
 .sedona-city-block, 
 .sedona-bridge-block { 
 	width: 33%; 
-	min-height: 256px; 
 	background-color: #81b3d2; 
 	text-align: center; 
 	color: #ffffff; 
@@ -207,9 +211,11 @@ color: rgba(0, 0, 0, 0.3);
 	fill: #81b3d2;
 }
 
+
 .reserve-buttons a { 
 color: #ffffff; 
-background-color: #81b3d2; 
+background-color: #81b3d2;
+display: inline-block; 
 } 
 
 .reserve-buttons a:focus, 
@@ -242,7 +248,6 @@ color: rgba(255, 255, 255, 0.3);
 .main-header { 
 	margin: 0px; 
 	padding: 0px; 
-	min-height: 57px; 
 	width: 1200px; 
 } 
 
@@ -280,13 +285,22 @@ color: rgba(255, 255, 255, 0.3);
 	position: absolute; 
 	left: 50%; 
 	transform: translateX(-50%); 
+	z-index: 3;
 } 
 
 .main-image { 
+	position: relative;
 	display: block; 
 	width: 1200px; 
 	height: 509px; 
 } 
+
+.main-image :last-child {
+	position: absolute;
+	display: block;
+	top: 451px;
+	right: 0px;
+}
 
 .preview {
 	width: 1200px;
@@ -330,7 +344,6 @@ color: rgba(255, 255, 255, 0.3);
 	margin-bottom: 25px; 
 	margin-left: auto; 
 	margin-right: auto; 
-	min-height: 50px; 
 } 
 
 .sedona-city-block span { 
@@ -350,8 +363,8 @@ color: rgba(255, 255, 255, 0.3);
 
 .advantages { 
 	width: 1200px;
-	min-height: 330px;
-	margin: 0px; 
+	margin-top: 60px; 
+	margin-bottom: 83px;
 	padding: 0px; 
 	display: flex; 
 } 
@@ -360,47 +373,57 @@ color: rgba(255, 255, 255, 0.3);
 	margin: 0px; 
 	padding: 0px; 
 	width: 1200px; 
-	margin-top: 60px; 
-	margin-bottom: 0px; 
 	display: flex; 
-	flex-direction: row; 
-	min-height: 270px; 
+	flex-direction: row;  
 } 
 
 .advices li { 
 	width: 33.3333%; 
 } 
 
+.advices svg { 
+	width: 76px; 
+	height: 76px;
+} 
+
+.advices span {
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 28px;
+	height: 76px;
+	display: block;
+}
+
+.advices h4 {
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 27px;
+}
+
 .sedona-hotel p { 
+	margin: 0px;
 	width: 255px; 
-	min-height: 50px; 
 	margin-right: auto; 
 	margin-left: auto; 
 } 
 
 .sedona-food p { 
-	min-height: 50px; 
+	margin: 0px; 
 	margin-right: auto; 
 	margin-left: auto; 
 } 
 
 .souvenirs p { 
+	margin: 0px;
 	width: 275px; 
-	min-height: 50px; 
 	margin-left: auto; 
 	margin-right: auto; 
-} 
-
-.advices svg { 
-	width: 76px; 
-	height: 76px; 
 } 
 
 .feature-sedona-bridge { 
 	margin: 0px; 
 	padding: 0px; 
 	width: 1200px; 
-	min-height: 256px; 
 	display: flex; 
 } 
 
@@ -419,7 +442,6 @@ color: rgba(255, 255, 255, 0.3);
 	width: 124px; 
 	margin-left: auto; 
 	margin-right: auto; 
-	min-height: 50px; 
 	margin-top: 50px;
 	margin-bottom: 25px;
 } 
@@ -434,8 +456,7 @@ color: rgba(255, 255, 255, 0.3);
 .sedona-bridge-block p { 
 	margin: 0px;
 	padding: 0px;
-	width:282px; 
-	min-height: 50px; 
+	width:282px;  
 	margin-left: auto; 
 	margin-right: auto; 
 } 
@@ -444,14 +465,14 @@ color: rgba(255, 255, 255, 0.3);
 	margin: 0px; 
 	padding: 0px; 
 	width: 1200px; 
-	min-height: 256px; 
 	display: flex; 
 } 
 
 .feature-sedona-item { 
 	margin: 0px; 
 	padding: 0px; 
-	width: 33.3333%; 
+	width: 33.3333%;
+	margin-bottom: 60px; 
 } 
 
 .feature-sedona-item h3 { 
@@ -460,7 +481,6 @@ color: rgba(255, 255, 255, 0.3);
 	width: 124px; 
 	margin-left: auto; 
 	margin-right: auto; 
-	min-height: 50px; 
 	margin-top: 50px;
 	margin-bottom: 25px;  
 } 
@@ -532,11 +552,18 @@ color: rgba(255, 255, 255, 0.3);
 	padding-bottom: 56px;
 }
 
-.modal-map { 
-	width: 1200px; 
-	min-height: 473px; 
+.modal-map {
+	margin: 0px;
+	padding: 0px; 
+	width: 1200px;  
 	display: block; 
 } 
+
+.modal-map img {
+	margin: 0px;
+	padding: 0px;
+	
+}
 
 .main-footer { 
 	margin: 0px; 
@@ -552,47 +579,55 @@ color: rgba(255, 255, 255, 0.3);
 	text-align: center; 
 	font-weight: bold; 
 	font-size: 21px; 
-	padding-top: 50px; 
-	padding-bottom: 52px; 
+	margin-top: 50px; 
+	margin-bottom: 52px; 
 } 
 
 .hashtag p {
+	margin: 0px;
+	padding: 0px;
 	font-size: 21px;
 	line-height: 26px;
 }
 
 .footer-social { 
+	margin: 0px;
+	padding: 0px;
 	width: 33.33333%; 
-	padding-top: 36px; 
-	padding-bottom: 36px; 
+	margin-top: 36px; 
+	margin-bottom: 36px; 
+	display: flex;
 } 
 
-.social { 
+.social {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 } 
 
 .footer-copyright {
 	margin: 0px;
 	padding: 0px;
 	width: 33.3333%; 
-	padding-top: 39px; 
-	padding-bottom: 39px;
+	margin-top: 39px; 
+	margin-bottom: 39px;
 	text-align: center;
-
 } 
-
-.footer-copyright p {
-	display: inline-block;
-	font-size: 14px;
-	line-height: 26px;
-	vertical-align: middle;
-}
 
 .copyright-logo {
 	display: inline-block;
 	width: 116px;
-	height: 41px;
+	height: 41px; 
+	vertical-align: middle;
+}
+
+.website {
+	display: inline-block;
+	color: #000000;
+	padding-right: 8px;
 	vertical-align: middle;
 }
 
@@ -742,14 +777,15 @@ color: rgba(255, 255, 255, 0.3);
 
 .hotel-searchresult {
 	width:100%; 
-	min-height: 152px; 
 	margin: 0px; 
-	padding: 0px; 
+	padding: 0px;
+	margin-bottom: 30px;
 	display: flex; 
 	border-top: 1px solid #dbd4d8; 
 } 
 
-.hotel-searchresult-image { 
+.hotel-searchresult-image img { 
+	display: block;
 	padding-left: 73px; 
 } 
 
@@ -758,7 +794,7 @@ color: rgba(255, 255, 255, 0.3);
 } 
 
 .hotel-info { 
-	width: 366px;
+	width: 653px;
 	margin: 0px; 
 	padding-top: 30px; 
 	padding-left: 30px; 
@@ -781,27 +817,28 @@ color: rgba(255, 255, 255, 0.3);
 	padding-bottom: 14px; 
 } 
 
-.hotel-searchresult:last-child { 
+.hotel-searchresult:last-child {
+	margin-bottom: 0px;
+	padding-bottom: 30px; 
 	border-bottom: 1px solid #dbd4d8; 
 }
 
 .rate {
-	width: 241px;
+	width: 125px;
 	margin: 0px;
-	margin-left: 287px;
+	margin-left: 130px;
 }
 
 .rate-wrapper {
-	width: 240px;
+	width: 125px;
 	margin: 0px;
 	margin-top: 30px;
 	text-align: right;
 }
 
 .rate-mark {
-	width:240px;
+	width: 125px;
 	margin: 0px;
 	margin-top: 48px;
 	text-align: right;
 }
-
