@@ -122,7 +122,8 @@ img {
 .date-in-block input, 
 .date-out-block input { 
 	background-color: #f2f2f2; 
-	font-weight: bold; 
+	font-weight: bold;
+	cursor: pointer;
 } 
 
 .date-in-block input:hover, 
@@ -157,7 +158,8 @@ img {
 .adults-number input, 
 .childs-number input { 
 	background-color: #f2f2f2; 
-	text-align: center; 
+	text-align: center;
+	cursor: pointer;
 } 
 
 .minus-adults:hover::before,
@@ -189,13 +191,6 @@ img {
 .plus-childs:active::before {
 	background-color: #81b3d2;
 }
-
-.button { 
-	font-weight: bold; 
-	font-size: 21px; 
-	background-color: #81b3d2; 
-	color: #ffffff; 
-} 
 
 .button:hover, 
 .button:focus { 
@@ -392,12 +387,15 @@ color: rgba(0, 0, 0, 0.3);
 } 
 
 .preview h2 {
+	width: 443px;
 	font-size: 21px;
 	line-height: 26px;
 	margin: 0px;
 	padding: 0px;
 	margin-top: 60px;
 	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .preview p {
@@ -596,7 +594,7 @@ color: rgba(0, 0, 0, 0.3);
 .feature-sedona-item span { 
 	display: block;
 	margin: 0px;
-	margin-bottom: 20px; 
+	margin-bottom: 22px; 
 	margin-left: auto; 
 	margin-right: auto; 
 } 
@@ -660,7 +658,7 @@ color: rgba(0, 0, 0, 0.3);
 	top: 86px;
 	background-color: #ffffff;
 	padding-top: 54px;
-	padding-bottom: 56px
+	padding-bottom: 53px
 }
 
 .form-align {
@@ -691,7 +689,7 @@ color: rgba(0, 0, 0, 0.3);
 .date-in-block label,
 .date-out-block label {
 	font-size: 14px;
-	line-height: 21px;
+	line-height: 26px;
 	display: inline-block;
 	width: 108px;
 	padding: 0px;
@@ -723,6 +721,8 @@ color: rgba(0, 0, 0, 0.3);
 
 .date-in-block input,
 .date-out-block input {
+	font-size: 14px;
+	line-height: 21px;
 	padding: 0px;
 	margin: 0px;
 	width: 296px;
@@ -766,6 +766,7 @@ color: rgba(0, 0, 0, 0.3);
 	padding: 0px;
 
 	width: 37px;
+	cursor: pointer;
 }
 
 .minus-adults::before {
@@ -786,6 +787,7 @@ color: rgba(0, 0, 0, 0.3);
 	padding: 0px;
 	
 	width: 37px;
+	cursor: pointer;
 }
 
 .plus-adults::after {
@@ -818,6 +820,7 @@ color: rgba(0, 0, 0, 0.3);
 	padding: 0px;
 
 	width: 37px;
+	cursor: pointer;
 }
 
 .minus-childs::before {
@@ -838,6 +841,7 @@ color: rgba(0, 0, 0, 0.3);
 	padding: 0px;
 
 	width: 37px;
+	cursor: pointer;
 }
 
 .plus-childs::after {
@@ -869,6 +873,12 @@ color: rgba(0, 0, 0, 0.3);
 	border: none;
 	width: 458px;
 	text-transform: uppercase;
+	font-weight: bold; 
+	font-size: 21px; 
+	line-height: 26px;
+	background-color: #81b3d2; 
+	color: #ffffff;
+	cursor: pointer;
 }
 
 .modal-map {
@@ -926,7 +936,6 @@ color: rgba(0, 0, 0, 0.3);
 	padding-top: 36px; 
 	padding-bottom: 36px; 
 	display: flex;
-	justify-content: center;
 	background-color: rgba(255, 255, 255, 0.9);
 } 
 
@@ -960,6 +969,10 @@ color: rgba(0, 0, 0, 0.3);
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.9);
 } 
+
+.footer-copyright {
+	line-height: 26px;
+}
 
 .copyright-logo {
 	display: inline-block;
@@ -1009,7 +1022,7 @@ color: rgba(0, 0, 0, 0.3);
 .info h3 {
 	margin: 0px;
 	padding: 0px;
-	margin-bottom: 24px;
+	margin-bottom: 25px;
 	font-size: 16px;
 	line-height: 21px;
 }
@@ -1017,6 +1030,10 @@ color: rgba(0, 0, 0, 0.3);
 .hotel-filters {
 	margin: 0px;
 	padding: 0px;
+}
+
+.filter-option label {
+	cursor: pointer;
 }
 
 .filter-option {
@@ -1043,7 +1060,7 @@ color: rgba(0, 0, 0, 0.3);
 .living-type-living h3 {
 	margin: 0px;
 	padding: 0px;
-	margin-bottom: 24px;
+	margin-bottom: 25px;
 }
 
 .scale-bar-price-title h3 {
@@ -1134,12 +1151,14 @@ input[type="checkbox"] + label::after {
 .price-range .max-price {
 	width: 82px;
 	padding-left: 65px;
+	line-height: 32px;
 }
 
 .price-range input {
 	width: 50px;
 	margin: 0;
 	padding: 0;
+	height: 32px;
 	color: inherit;
 	font: inherit;
 
@@ -1231,8 +1250,8 @@ input[type="checkbox"] + label::after {
 	width: 1200px; 
 	display: flex;
 	align-items: baseline;
-	padding-top: 32px;
-	padding-bottom: 29px;
+	padding-top: 30px;
+	padding-bottom: 31px;
 }
 
 .results-block {
