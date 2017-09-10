@@ -121,6 +121,7 @@ img {
 
 .date-in-block input, 
 .date-out-block input { 
+	font-family: "Pt-sans", Arial, sans-serif;
 	background-color: #f2f2f2; 
 	font-weight: bold;
 	cursor: pointer;
