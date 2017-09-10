@@ -392,7 +392,7 @@ color: rgba(0, 0, 0, 0.3);
 	line-height: 26px;
 	margin: 0px;
 	padding: 0px;
-	margin-top: 60px;
+	margin-top: 58px;
 	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
@@ -546,8 +546,8 @@ color: rgba(0, 0, 0, 0.3);
 	width: 155px; 
 	margin-left: auto; 
 	margin-right: auto; 
-	margin-top: 46px;
-	margin-bottom: 26px;
+	margin-top: 45px;
+	margin-bottom: 23px;
 } 
 
 .sedona-bridge-block span { 
@@ -570,13 +570,15 @@ color: rgba(0, 0, 0, 0.3);
 	padding: 0px; 
 	width: 1200px; 
 	display: flex; 
+	padding-top: 47px;
+	padding-bottom: 60px; 
 } 
 
 .feature-sedona-item { 
 	margin: 0px; 
 	padding: 0px; 
 	width: 33.3333%;
-	margin-bottom: 60px; 
+	
 } 
 
 .feature-sedona-item h3 {
@@ -587,7 +589,7 @@ color: rgba(0, 0, 0, 0.3);
 	width: 124px; 
 	margin-left: auto; 
 	margin-right: auto; 
-	margin-top: 48px;
+	
 	margin-bottom: 24px;  
 } 
 
@@ -665,7 +667,7 @@ color: rgba(0, 0, 0, 0.3);
 	margin: 0px;
 	padding: 0px;
 	margin-left: 58px;
-	margin-top:3px;
+	margin-top:2px;
 	text-align: left;
 }
 
@@ -701,13 +703,13 @@ color: rgba(0, 0, 0, 0.3);
 	width: 112px;
 	padding: 0px;
 	margin: 0px;
-	padding-top: 6px;
+	padding-top: 8px;
 }
 
 .search-form-block-childs label {
 	display: inline-block;
 	margin-right: 26px;
-	margin-top: 6px;
+	margin-top: 8px;
 }
 
 .search-form-block-childs {
@@ -722,7 +724,7 @@ color: rgba(0, 0, 0, 0.3);
 .date-in-block input,
 .date-out-block input {
 	font-size: 14px;
-	line-height: 21px;
+	line-height: 26px;
 	padding: 0px;
 	margin: 0px;
 	width: 296px;
@@ -901,7 +903,8 @@ color: rgba(0, 0, 0, 0.3);
 	margin: 0px; 
 	padding: 0px; 
 	width: 1200px; 
-	display: flex; 
+	display: flex;
+
 }
 
 .main-footer-index {
@@ -917,9 +920,8 @@ color: rgba(0, 0, 0, 0.3);
 	text-align: center; 
 	font-weight: bold; 
 	font-size: 21px; 
-	padding-top: 46px; 
+	padding-top: 45px; 
 	padding-bottom: 52px; 
-	background-color: rgba(255, 255, 255, 0.9);
 } 
 
 .hashtag p {
@@ -933,10 +935,9 @@ color: rgba(0, 0, 0, 0.3);
 	margin: 0px;
 	padding: 0px;
 	width: 33.33333%; 
-	padding-top: 36px; 
+	padding-top: 35px; 
 	padding-bottom: 36px; 
 	display: flex;
-	background-color: rgba(255, 255, 255, 0.9);
 } 
 
 .social {
@@ -964,10 +965,9 @@ color: rgba(0, 0, 0, 0.3);
 	margin: 0px;
 	padding: 0px;
 	width: 33.3333%; 
-	padding-top: 39px; 
+	padding-top: 38px; 
 	padding-bottom: 39px;
 	text-align: center;
-	background-color: rgba(255, 255, 255, 0.9);
 } 
 
 .footer-copyright {
@@ -1022,7 +1022,7 @@ color: rgba(0, 0, 0, 0.3);
 .info h3 {
 	margin: 0px;
 	padding: 0px;
-	margin-bottom: 25px;
+	margin-bottom: 23px;
 	font-size: 16px;
 	line-height: 21px;
 }
@@ -1039,7 +1039,7 @@ color: rgba(0, 0, 0, 0.3);
 .filter-option {
 	margin: 0px;
 	padding: 0px;
-	margin-bottom: 25px;
+	margin-bottom: 24px;
 }
 
 .filter-option:last-child {
@@ -1208,7 +1208,7 @@ input[type="checkbox"] + label::after {
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 30px;
+  padding: 6px 33px;
 
   font-size: 14px;
   line-height: 20px;
@@ -1266,6 +1266,7 @@ input[type="checkbox"] + label::after {
 	margin: 0px;
 	padding:0px;
 	font-size: 21px;
+	font-weight: bold;
 	line-height: 26px;
 	margin-left: 73px;
 }
@@ -1321,7 +1322,7 @@ input[type="checkbox"] + label::after {
 .hotel-info { 
 	width: 653px;
 	margin: 0px; 
-	margin-top: 25px; 
+	margin-top: 26px; 
 	margin-left: 28px; 
 } 
 
