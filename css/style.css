@@ -637,8 +637,8 @@ color: rgba(0, 0, 0, 0.3);
 	width:571px;
 	margin: 0 auto;
 	padding: 0px;
-	background-color: #ffffff; 
-	color:#000000;
+	background-color: #ffffff;
+	color: #000000;
 }
 
 .search-form-block a {
@@ -650,7 +650,7 @@ color: rgba(0, 0, 0, 0.3);
 	padding-top:30px; 
 	padding-bottom: 31px; 
 	width: 571px; 
-	background-color: #766357; 
+	background-color: #766357;
 	color: #ffffff;
 } 
 
