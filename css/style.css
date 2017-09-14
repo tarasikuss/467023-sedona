@@ -1450,7 +1450,7 @@ input[type="checkbox"]:focus + label::after {
 .btn-transparent {
 	display: block;
 	margin: 0 auto;
-	padding: 6px 30px;
+	padding: 6px 34px;
 
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
