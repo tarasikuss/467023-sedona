@@ -1,0 +1,1 @@
+var link=document.querySelector(".search-sedona"),popup=document.querySelector(".form-info"),datein=popup.querySelector("[name=datein]");link.addEventListener("click",function(e){e.preventDefault(),popup.classList.add("form-hide"),popup.classList.toggle("form-show"),datein.focus()});

@@ -770,6 +770,37 @@ img {
 	padding-bottom: 53px
 }
 
+.form-hide {
+	display: none;
+}
+
+.form-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+  	-webkit-transform: translateY(30px);
+	transform: translateY(-30px);
+  }
+
+  70% {
+  	-webkit-transform: translateY(30px);
+	transform: translateY(30px);
+  }
+
+  90% {
+  	-webkit-transform: translateY(-10px);
+	transform: translateY(-10px);
+  }
+
+  100% {
+  	-webkit-transform: translateY(0);
+	transform: translateY(0);
+  }
+}
+
 .form-align {
 	margin: 0px;
 	padding: 0px;
@@ -1078,6 +1109,7 @@ img {
 }
 
 .main-footer-index {
+	position: relative;
 	margin-top: -120px;
 	background-color: rgba(255, 255, 255, 0.9);
 }
@@ -1672,12 +1704,4 @@ input[type="checkbox"]:focus + label::after {
 
 	text-align: center;
 	background-color: #f2f2f2;
-}
-
-.form-hide {
-	display: none;
-}
-
-.form-show {
-	display: block;
 }
